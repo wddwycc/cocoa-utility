@@ -1,3 +1,6 @@
+import Foundation
+import UIKit
+
 extension NSDate{
     func dateComponents()->NSDateComponents{
         let calendar = NSCalendar.currentCalendar()

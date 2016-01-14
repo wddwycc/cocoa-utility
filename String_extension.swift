@@ -1,3 +1,6 @@
+import Foundation
+import UIKit
+
 extension String {
     init(htmlEncodedString: String) {
         let encodedData = htmlEncodedString.dataUsingEncoding(NSUTF8StringEncoding)!
