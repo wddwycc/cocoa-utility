@@ -5,7 +5,7 @@ In the Xcode Project, run git submodule command:
 
     $ git submodule add https://github.com/wddwycc/cocoa-utility
 
-Drag the submodule folder into Xcode Project (make sure `copy item if needed unchecked`)
+Drag the submodule folder into Xcode Project (make sure `copy item if needed` unchecked)
 
 
 
