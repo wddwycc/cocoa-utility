@@ -19,8 +19,8 @@ extension NSDate{
             return "\(Int(interval / 3600))小时前"
         }
         if(interval < 60 * 60 * 24 * 365){
-            return "\(Int(interval / Int(60 * 60 * 24)))天前"
+            return "\(Int(interval) / Int(60 * 60 * 24)))天前"
         }
-        return "\(Int(interval / Int(60 * 60 * 24 * 365)))年前"
+        return "\(Int(interval) / Int(60 * 60 * 24 * 365)))年前"
     }
 }
