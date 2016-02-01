@@ -8,10 +8,6 @@ extension UIColor {
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
-    
-    convenience init(netHex:Int) {
-        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
-    }
     convenience init(hex: String, alpha: CGFloat = 1) {
         assert(hex[hex.startIndex] == "#", "Expected hex string of format #RRGGBB")
         
