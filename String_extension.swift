@@ -16,4 +16,13 @@ extension String {
         }
         self.init(attributedString!.string)
     }
+    
+    //MARK: time
+    func iso8601toNSDate()->NSDate?{
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZ"
+        return dateFormatter.dateFromString(self)
+    }
+
 }
