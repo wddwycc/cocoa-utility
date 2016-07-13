@@ -1,3 +1,5 @@
+import Foundation
+
 //simple delay function
 func delay(seconds seconds: Double, completion:()->()) {
     let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
