@@ -26,3 +26,9 @@ extension String {
     }
 
 }
+
+extension String {
+    var url: NSURL? {
+        return NSURL(string: self)
+    }
+}
