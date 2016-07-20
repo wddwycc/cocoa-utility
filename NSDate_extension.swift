@@ -23,4 +23,19 @@ extension NSDate{
         }
         return "\(Int(interval) / Int(60 * 60 * 24 * 365)))年前"
     }
+    
+    // Sample: 2016/7/13 15:14
+    func presentation() -> String {
+        let component = self.dateComponents()
+        return "\(component.year)/\(component.month.addZeroPrefix())/\(component.day.addZeroPrefix()) \(component.hour.addZeroPrefix()):\(component.minute.addZeroPrefix())"
+    }
+    
 }
+
+private extension Int {
+    func addZeroPrefix() -> String {
+        if self >= 10 { return "\(self)" }
+        return "0\(self)"
+    }
+}
+
